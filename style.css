@@ -1,0 +1,33 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name:chageBox ;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+}
+@keyframes chageBox{
+    0%{
+        background-color: red;
+        transform: translate(0,0);
+    }
+    25%{
+        background-color: blue;
+        transform: translate(0,250px);
+    }
+    50%{
+        transform: translate(250px,250px);
+        background-color: green;
+    }
+    75%{
+        transform: translate(250px,0);
+        background-color: yellow;
+    }
+    100%{
+        background-color: red;
+        transform: translate(0,0);
+    }
+
+}
